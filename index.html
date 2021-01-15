@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div>
+      <h2>Input Files</h2>
+      <div>Rotations File: <input id="rotationsIn" type="file" onChange="renderRotations(this)"/></div>
+      <div>Spots File: <input id="spotsIn" type="file" onChange="renderSpots(this)"/></div>
+      <button onclick="loadInfo()">Continue</button>
+    </div>
+    <hr />
+    <div class="report">
+      <div id="header" class="report__header">
+        <div class="report__header-info">
+          <div class="report__header-title">Total Spots</div>
+          <div id="totalSpots" class="report__header-text"></div>
+        </div>
+        <div class="report__header-info">
+          <div class="report__header-title">Total Spend</div>
+          <div id="totalSpend" class="report__header-text"></div>
+        </div>
+        <div class="report__header-info">
+          <div class="report__header-title">Total Views</div>
+          <div id="totalViews" class="report__header-text"></div>
+        </div>
+      </div>
+      <div class="report__content">
+        <div class="report__card">
+          <h3 class="report__card-title">By Creative</h3>
+          <table class="report__table" id="creative">
+          </table>
+        </div>
+        <div class="report__card">
+          <h3 class="report__card-title">By Day - Rotation</h3>
+          <table class="report__table" id="rotation">
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

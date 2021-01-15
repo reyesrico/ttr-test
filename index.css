@@ -1,0 +1,79 @@
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #F0F1F1;
+}
+
+.report {
+  background-color: white;
+  padding: 8px 16px 16px 16px;
+}
+
+.report__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.report__header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.report__header-title {
+  font-size: 12px;
+}
+
+.report__header-text {
+  font-weight: bold;
+}
+
+.report__content {
+  background-color: #F6F7FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.report__card {
+  background-color: white;
+  box-shadow: 4px 4px 2px lightgray;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  padding: 16px;
+  width: 80%;
+}
+
+.report__card-title {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.report__row-header {
+  color: lightgray;
+  font-size: 10px;
+}
+
+.report__table {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.report__row-value td {
+  border-bottom: 1px solid #F6F7FA;
+  background-color: white;
+  font-size: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.report__row-header td:first-child {
+  width: 60%;
+}
